@@ -1,4 +1,4 @@
 ## Preview
-ReDesign made by: 
+ReDesign made by: https://www.instagram.com/uxui_howard.le/
 
-![](https://github.com/Ghibli-project/project-preview.gif)
+![](https://github.com/efarias03/Ghibli-project/blob/main/public/project-preview.gif?raw=true)
