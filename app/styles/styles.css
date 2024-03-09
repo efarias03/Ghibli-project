@@ -173,7 +173,7 @@ a {
     gap: 0.5rem;
     width: 90%;
     height: 4.5rem;
-    padding: 0 1.5rem;
+    padding: 0 2rem;
     background-color: #fff;
     border-radius: 10px;
     transform: translate(4%, 0);
@@ -181,6 +181,7 @@ a {
   }
   #nav-container nav ul li,
   #nav-container nav ul a {
+    font-size: 0.9rem;
     text-decoration: none;
     color: #000;
     display: flex;
