@@ -138,4 +138,62 @@ a {
 #hero-button-container #hero-button a:hover {
   box-shadow: 0px 0px 54px 8px #00B2FF;
   transition: 0.5s ease;
+}
+
+@media (max-width: 425px) {
+  #nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 18px;
+    z-index: 20;
+    background: rgba(77, 202, 255, 0.3882352941);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    width: auto;
+    height: 5rem;
+    pointer-events: all;
+  }
+  #nav-container #nav-logo {
+    transform: translate(30%, 0);
+  }
+  #nav-container nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #nav-container nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 90%;
+    height: 4.5rem;
+    padding: 0 1.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    transform: translate(4%, 0);
+    box-shadow: 0px 0px 54px 8px rgba(255, 255, 255, 0.5);
+  }
+  #nav-container nav ul li,
+  #nav-container nav ul a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    height: 100%;
+  }
+  #hero-button-container {
+    bottom: 5vh;
+  }
+  #hero-button-container #hero-button a {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
