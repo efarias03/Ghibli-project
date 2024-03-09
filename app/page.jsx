@@ -1,6 +1,6 @@
 "use client";
 import * as THREE from 'three'
-import { CameraControls, Html, Image, OrbitControls, Plane, Sparkles, Text, useProgress, useTexture } from "@react-three/drei";
+import { CameraControls, Html, Image, Loader, OrbitControls, Plane, Sparkles, Text, useProgress, useTexture } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Suspense } from 'react';
 
@@ -133,20 +133,19 @@ function Overlay() {
   )
 }
 
-function Loader() {
-  const { active, progress, errors, item, loaded, total } = useProgress()
-  return <Html center>{progress} % loaded</Html>
-}
 
 function Scene() {
   return (
-    <Canvas id="canvas" camera={{ position: [0, 0, 0], fov: 25 }}>
-      <Suspense fallback={<Loader />}>
-      <ambientLight intensity={1.2} />
-      <Images />
-      <Rig />
-      </Suspense>
-    </Canvas>
+    <>
+      <Canvas id="canvas" camera={{ position: [0, 0, 0], fov: 25 }}>
+        <Suspense fallback={null}>
+          <ambientLight intensity={1.2} />
+          <Images />
+          <Rig />
+        </Suspense>
+      </Canvas>
+      <Loader />
+    </>
   )
 }
 
