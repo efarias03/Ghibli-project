@@ -56,7 +56,7 @@ function Images() {
       <Image transparent position={[1.5, 1.5, -8]} rotation={[0, 0, 0]} scale={[3, 2, 1]} url='/ghibli-project-imgs/Cloud2.png' />
 
       {/* <Image transparent position={[-1.5, .2, -5]} rotation={[0, .8, 0]} scale={2} url='/ghibli-project-imgs/B_TREE.png' /> */}
-      <Text position={[-1, 0, -4]} rotation={[0, .8, 0]} children={`Ghibli\nStudios`} font='/Outfit-Medium.ttf' fontSize={.2} lineHeight={.8} color={"#fff"} />
+      <Text position={[-1, 0, -4]} rotation={[0, .8, 0]} children={`Ghibli\nStudios`} font='/MochiyPopOne-Regular.ttf' fontSize={.15} lineHeight={1} color={"#fff"} />
     </group>
   )
 }
